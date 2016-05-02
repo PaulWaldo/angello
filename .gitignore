@@ -1,0 +1,17 @@
+target*
+*.trace.db
+*.lock.db
+.classpath
+.settings
+*.ser
+*.swp
+.gradle
+build
+buildPlugins
+node_modules
+/bin/
+.idea
+*.iml
+*.trace.db
+.asscache
+grails-app/assets/bower/**/*
