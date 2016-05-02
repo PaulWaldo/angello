@@ -2,7 +2,7 @@ html,
 html,
 body {
     background-color: #36393D;
-    background: url(../img/bg-wood.jpg);
+    background: url(../images/bg-wood.jpg);
     overflow: hidden;
 }
 
@@ -22,7 +22,7 @@ body.loading .modal {
     left: 0;
     height: 100%;
     width: 100%;
-    background: rgba(244, 249, 251, 0.80) url(../img/loader.gif) 50% 50% no-repeat;
+    background: rgba(244, 249, 251, 0.80) url(../images/loader.gif) 50% 50% no-repeat;
 }
 
 .navbar {
@@ -59,7 +59,7 @@ body.loading .modal {
 }
 
 .story article {
-    background-image: url(../img/note-bg.png);
+    background-image: url(../images/note-bg.png);
     height: 145px;
     padding: 10px;
     margin: 3px;
