@@ -11,7 +11,7 @@
         <div class="navbar navbar-fixed-top navbar-default">
             <div class="navbar-header pull-left">
                 <a class="logo navbar-brand" href="#/">
-                    <img src="assets/img/angello.png">
+                    <asset:image src="angello.png"/>
                 </a>
             </div>
             <div class="btn-group pull-right" ng-show="main.currentUser">
