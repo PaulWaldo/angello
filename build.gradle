@@ -92,6 +92,9 @@ bower {
     'angular-resource'('1.4.x') {
         source 'angular-resource.js' >> '/angular/'
     }
+    'angular-route'('1.4.x') {
+        source 'angular-route.js' >> '/angular/'
+    }
     'angular-mocks'('1.4.x') {
         source 'angular-mocks.js' >> '/angular/'
     }
