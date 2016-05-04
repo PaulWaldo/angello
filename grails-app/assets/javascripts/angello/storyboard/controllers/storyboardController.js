@@ -1,4 +1,6 @@
 //= wrapped
+//= require /angular/angular
+//= require angello/storyboard/angello.storyboard
 
 angular.module('Angello.Storyboard')
     .controller('StoryboardCtrl', function() {

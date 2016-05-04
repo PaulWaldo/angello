@@ -1,15 +1,17 @@
 //= wrapped
 //= require /angular/angular
-//= require /angular/angular-route
+//= require /angular-route/angular-route
 //= require /angello/core/angello.core
 //= require /angello/index/angello.index
-//= require /angello/storyboard/Storyboard
+//= require /angello/common/angello.common
+//= require /angello/storyboard/angello.storyboard
 
 var myModule = angular.module("Angello", [
     "angello.core",
     "angello.index",
     'ngRoute',
-    "Angello.Storyboard"
+    'Angello.Common',
+    'Angello.Storyboard'
 ]);
 
 myModule.config(function($routeProvider) {
@@ -20,3 +22,8 @@ myModule.config(function($routeProvider) {
             controllerAs: 'storyboard'
         })
 });
+//var myModule = angular.module('Angello', []);
+//myModule.factory('AngelloHelper', function() { });
+//myModule.service('AngelloModel', function() { });
+myModule.controller('MainCtrl', function() { });
+//myModule.directive('story', function() { });
