@@ -14,7 +14,7 @@
                     <asset:image src="angello.png"/>
                 </a>
             </div>
-            <div class="btn-group pull-right" ng-show="main.currentUser">
+            <div class="btn-group pull-right" ><!-- ng-show="main.currentUser" -->
                 <a class="btn btn-danger" href="#/">
                     <span class="glyphicon glyphicon-home"></span>
                 </a>
