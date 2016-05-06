@@ -38,12 +38,3 @@ angular
             {name: 'Verified'}
         ];
     });
-
-
-//angular
-//    .module("Angello")
-//    .controller("StoryboardController", StoryboardController);
-//
-//function StoryboardController() {
-//    var vm = this;
-//}
