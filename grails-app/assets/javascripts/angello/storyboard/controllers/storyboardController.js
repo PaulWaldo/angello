@@ -3,7 +3,7 @@
 
 angular
     .module("Angello.Storyboard", [])
-    .controller('StoryboardCtrl', function() {
+    .controller('StoryboardCtrl', function(STORY_TYPES) {
         var storyboard = this;
 
         storyboard.stories = [
@@ -37,4 +37,6 @@ angular
             {name: 'QA Review'},
             {name: 'Verified'}
         ];
+
+        storyboard.types = STORY_TYPES;
     });
