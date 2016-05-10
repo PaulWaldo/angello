@@ -3,13 +3,11 @@ package angello
 class UrlMappings {
 
     static mappings = {
-        "/$controller/$action?/$id?(.$format)?"{
-            constraints {
-                // apply constraints here
-            }
-        }
-
         "/"(view: '/index')
+        "/api/persons"(resources: 'person')
+        "/api/statuses"(resources: 'status')
+        "/api/stories"(resources: 'story')
+        "/api/storytypes"(resources: 'storyType')
         "500"(view: '/error')
         "404"(view: '/notFound')
     }
