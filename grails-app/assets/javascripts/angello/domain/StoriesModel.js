@@ -1,7 +1,7 @@
 //= wrapped
 
 angular
-    .module("angello")
+    .module("Angello")
     .factory("StoriesModel", StoriesModel);
 
 function StoriesModel(DomainServiceFactory) {
