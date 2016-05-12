@@ -4,6 +4,12 @@
 //= require /angello/core/angello.core
 //= require /angello/index/angello.index
 //= require /angello/common/angello.common
+//= require_self
+//= require_tree services
+//= require_tree controllers
+//= require_tree directives
+//= require_tree domain
+//= require_tree templates
 //= require /angello/storyboard/angello.storyboard
 
 var myModule = angular.module("Angello", [
