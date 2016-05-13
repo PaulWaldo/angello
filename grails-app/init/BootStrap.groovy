@@ -10,10 +10,10 @@ class BootStrap {
         def p2 = new Person(firstName: 'Sally', lastName: 'Joe').save(failOnError: true)
 
         def todo = new Status(name: 'To Do').save(failOnError: true)
-        new Status(name: 'In Progress').save(failOnError: true)
-        new Status(name: 'Code Review').save(failOnError: true)
-        new Status(name: 'QA Review').save(failOnError: true)
-        new Status(name: 'Verified').save(failOnError: true)
+        def inProgress = new Status(name: 'In Progress').save(failOnError: true)
+        def codeReview = new Status(name: 'Code Review').save(failOnError: true)
+        def qaReview = new Status(name: 'QA Review').save(failOnError: true)
+        def verified = new Status(name: 'Verified').save(failOnError: true)
 
         def feature = new StoryType(name: 'Feature').save(failOnError: true)
         new StoryType(name: 'Enhancement').save(failOnError: true)

@@ -1,0 +1,7 @@
+import angello.Story
+
+model {
+    Iterable<Story> storyList  // Note: respond method renders with model=<domain_name>List
+}
+//this.properties.sort {a, b -> a.key <=> b.key}.each {println it}
+json tmpl.story(storyList ?: [])

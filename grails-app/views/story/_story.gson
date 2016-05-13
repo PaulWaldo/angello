@@ -1,0 +1,18 @@
+import angello.Person
+import angello.Story
+
+model {
+    Story story
+    Person person
+}
+
+//json g.render(story, [deep: true])
+json {
+    title story.title
+    description story.description
+    assignee "${story.assignee.firstName} ${story.assignee.lastName}"
+    type story.type.name
+    status story.status.name
+    criteria story.criteria
+    reporter "${story.reporter.firstName} ${story.reporter.lastName}"
+}

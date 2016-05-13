@@ -5,7 +5,6 @@ angular
     .module("Angello.Storyboard", [])
     .controller('StoryboardCtrl', function(STORY_TYPES, Story) {
         var storyboard = this;
-        storyboard.stories = Story.list();
 
         storyboard.stories = [
             {
@@ -39,5 +38,6 @@ angular
             {name: 'Verified'}
         ];
 
+        storyboard.stories = Story.list();
         storyboard.types = STORY_TYPES;
     });
