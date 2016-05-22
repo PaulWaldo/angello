@@ -8,5 +8,5 @@
 //= require_tree domain
 //= require_tree templates
 
-angular.module("Angello.Common", ["angello.core"]);
+angular.module("angello.Common", ["angello.core"]);
 

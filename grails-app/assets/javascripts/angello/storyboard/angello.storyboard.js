@@ -4,4 +4,4 @@
 //= require_tree directives
 //= require_tree templates
 
-angular.module('Angello.Storyboard', ['Angello.Common']);
+angular.module('angello.Storyboard', ['angello.Common']);

@@ -1,6 +1,6 @@
-describe("Angello.common module", function() {
+describe("angello.common module", function() {
 
-    beforeEach(angular.mock.module("Angello.common", function() {
+    beforeEach(angular.mock.module("angello.common", function() {
     }));
 
     describe("run", function() {

@@ -1,7 +1,7 @@
-describe("Angello module", function() {
+describe("angello module", function() {
     var $httpBackend;
 
-    beforeEach(angular.mock.module("Angello", function() {
+    beforeEach(angular.mock.module("angello", function() {
     }));
 
     beforeEach(angular.mock.inject(function(_$httpBackend_) {

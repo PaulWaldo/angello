@@ -2,7 +2,7 @@
 //= require /angular/angular
 
 angular
-    .module("Angello.Storyboard", [])
+    .module("angello.Storyboard", [])
     .controller('StoryboardCtrl', function(STORY_TYPES, Story) {
         var storyboard = this;
 

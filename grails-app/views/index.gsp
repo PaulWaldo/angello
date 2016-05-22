@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html ng-app="Angello">
+<html ng-app="angello">
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width">
@@ -7,7 +7,7 @@
 
         <asset:stylesheet href="application.css"/>
     </head>
-    <body ng-controller="MainCtrl as main" ng-class="{loading:loadingView}">
+    <body ng-controller="MainController as main" ng-class="{loading:loadingView}">
         <div class="navbar navbar-fixed-top navbar-default">
             <div class="navbar-header pull-left">
                 <a class="logo navbar-brand" href="#/">
@@ -32,7 +32,21 @@
 
         <div ng-view=""></div>
 
+        <div ng-switch="main.authenticated">
+            <div ng-switch-when="true">
+                <div ng-include="'assets/angello/templates/list.html'"></div>
+            </div>
+            <div ng-switch-when="false">
+                <div ng-include="'assets/angello/templates/login.tpl.html'"></div>
+            </div>
+            <div ng-switch-default>
+                <h1>Im broken</h1>
+            </div>
+        </div>
+
         <div class="modal"></div>
         <asset:javascript src="angello.js" />
     </body>
 </html>
+
+

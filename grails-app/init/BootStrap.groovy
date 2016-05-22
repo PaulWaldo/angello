@@ -1,7 +1,9 @@
 import angello.Person
+import angello.Role
 import angello.Status
 import angello.Story
 import angello.StoryType
+import angello.User
 
 class BootStrap {
 
@@ -28,6 +30,15 @@ class BootStrap {
             status:todo,
             criteria: 'It just works',
             reporter: p2).save(failOnError: true)
+
+        if (Role.list().size() == 0) {
+            new Role(authority: "ROLE_ANONYMOUS").save(failOnError: true);
+            new Role(authority: "ROLE_ADMIN").save(failOnError: true);
+            new Role(authority: "ROLE_USER").save(failOnError: true);
+        }
+        if (User.list().size() == 0) {
+            new User(username: 'user', password: 'pass').save(failOnError: true)
+        }
     }
     def destroy = {
     }
