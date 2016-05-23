@@ -239,6 +239,7 @@ form.ng-dirty input.ng-valid {
     padding: 20px;
     margin: 80px auto 20px;
     position: relative;
+    background-color: #FFF;
 }
 
 .form-signin .a0-panel.a0-onestep {
@@ -249,11 +250,13 @@ form.ng-dirty input.ng-valid {
     max-width: none !important;
 }
 
+/*
 .form-signin button {
     background: none;
     border: none;
     box-shadow: none;
 }
+*/
 
 .form-signin button:hover {
     background: none;
