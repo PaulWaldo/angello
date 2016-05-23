@@ -4,6 +4,7 @@
 //= require /angello/core/angello.core
 //= require /angello/index/angello.index
 //= require /angello/common/angello.common
+//= require_tree /angello/login/controllers
 //= require_self
 //= require /angello/controllers/mainController
 //= require_tree services
@@ -19,7 +20,7 @@ var myModule = angular.module("angello", [
     'ngRoute',
     'angello.Common',
     'angello.Storyboard',
-//    'angello.login'
+    'angello.login'
 ]);
 
 myModule.config(function($routeProvider, $httpProvider) {
