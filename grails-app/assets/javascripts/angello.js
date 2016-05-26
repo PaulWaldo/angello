@@ -4,10 +4,10 @@
 //= require /angello/core/angello.core
 //= require /angello/index/angello.index
 //= require /angello/common/angello.common
-//= require_tree /angello/login/controllers
+//= require /angello/login/Login
 //= require_self
 //= require /angello/controllers/mainController
-//= require_tree services
+//= require_tree /angello/services
 //= require_tree controllers
 //= require_tree directives
 //= require_tree /angello/domain
